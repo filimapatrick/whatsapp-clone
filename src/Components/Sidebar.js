@@ -23,17 +23,15 @@ function Sidebar() {
 <div className='sidebar__search'>
     <div className='sidebar_search_input'>
     <SearchIcon/>
-    <input type='text' placeholder='Search or start new chat'/>
+    <input type='text' placeholder='Search or tart new chat'/>
     </div>
     </div>
 
 <div className='sidebar-chat-list'>
-<UserProfile/>
-<UserProfile/>
-<UserProfile/>
-<UserProfile/>
-<UserProfile/>
-<UserProfile/>
+<UserProfile name='john Cena' image='./user.png'/>
+<UserProfile name='The Rock' image='./user.png'/>
+<UserProfile name='Batista' image='./user.png'/>
+
 
 </div>
     </div>
