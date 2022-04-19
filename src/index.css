@@ -1,0 +1,123 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.sidebar{
+  min-width:300px;
+  width: 30%;
+  border-right: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position:relative;
+  background-color: #fafafa;
+
+  transition:all 0.3s;
+}
+
+.sidebar > .sidebar__header {
+ height: 50px;
+ padding: 5px 0 5px 10px;
+ background-color: #ededed;
+ align-items: center;
+ justify-content: space-between;
+ position: relative;
+ display: flex;
+}
+
+.sidebar > .sidebar__header > .sidebar_header_image{
+  width:42px;
+ 
+}
+
+
+.sidebar > .sidebar__header > .sidebar_header_image > img{
+  width:100%;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.sidebar_header_btn{
+  display:flex;
+  align-items:center;
+  justify-content:space-evenly;
+  width: 150px;
+  color: #51585C;
+}
+
+.sidebar_header_btn > .MuiSvgIcon-root{
+  font-size: 23px;
+}
+
+
+ /* searchbar */
+
+ .sidebar__search{
+ height: 60px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: #f6f6f6;
+}
+
+.sidebar_search_input{
+  display: flex;
+  width: 100%;
+  align-items: center;
+height: 30px;
+background-color: #fff;
+border: 1px solid lightgray;
+border-radius: 10px;
+}
+
+.sidebar_search_input > .MuiSvgIcon-root{
+  font-size: 18px;
+  margin-left: 10px;
+  color: #acacac;
+}
+
+.sidebar_search_input > input{
+ background-color: transparent;
+ border:none;
+  outline:none;
+  margin-left: 6px;
+  margin-bottom: 2px;
+  width: 80%;
+}
+
+
+/* user Profile */
+
+
+
+.user-profile{
+ display: flex;
+ align-items: center;
+ padding: 10px;
+ cursor: pointer;
+ border-bottom: 1px solid lightgray;
+
+
+}
+
+
+
+.user-info >.user-name{
+  text-transform: capitalize;
+  font-size: 18px;
+}
+
+.user-profile >.user-profile-image >img{
+  width:40px;
+  border-radius: 100%;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.user-info{
+ flex: 1;
+  margin-left: 10px;
+  text-align: left;
+}
