@@ -28,9 +28,25 @@ function Sidebar() {
     </div>
 
 <div className='sidebar-chat-list'>
-<UserProfile name='john Cena' image='./user.png'/>
-<UserProfile name='The Rock' image='./user.png'/>
-<UserProfile name='Batista' image='./user.png'/>
+<UserProfile name='John' photoURL='./user.png'/>
+<UserProfile name='Andrew' photoURL='./user.png'/>
+<UserProfile name='James' photoURL='./user.png'/>
+<UserProfile name='Jerry' photoURL='./user.png'/>
+<UserProfile name='Jerry' photoURL='./user.png'/>
+<UserProfile name='Jerry' photoURL='./user.png'/>
+<UserProfile name='Jerry' photoURL='./user.png'/>
+<UserProfile name='Jerry' photoURL='./user.png'/>
+<UserProfile name='Jerry' photoURL='./user.png'/>
+<UserProfile name='Jerry' photoURL='./user.png'/>
+<UserProfile name='Jerry' photoURL='./user.png'/>
+<UserProfile name='Jerry' photoURL='./user.png'/>
+<UserProfile name='Jerry' photoURL='./user.png'/>
+<UserProfile name='Jerry' photoURL='./user.png'/>
+
+
+
+
+
 
 
 </div>

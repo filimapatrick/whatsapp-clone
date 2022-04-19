@@ -132,7 +132,7 @@ border-radius: 10px;
  /* HOME */
 
  .home{
-   width:100vh;
+   width:100vw;
    height: 100vh;
    display: flex;
    flex-direction: column;
@@ -164,7 +164,7 @@ border-radius: 10px;
   flex:1;
   background-color: #fafafa;
   z-index: 100;
-  height: 100px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,3 +181,112 @@ border-radius: 10px;
 }
   
 }
+
+
+    /* chatpage */
+
+    .chatpage{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #d7dbd6;
+      z-index: 100;
+      position: relative;
+
+    }
+
+    .chatpage::before{
+      width: 100vw;
+      height: 222px;
+      background-color: #4ec0a5;
+      position:absolute;
+      z-index: -1;
+      top:0;
+      content: '';
+
+    }
+
+           /* chatcontainer */
+    .chatpage-container{
+      width:100%;
+      height: 100%;
+      max-width: 1366px;
+      z-index: 100;
+      display: flex;
+    }
+
+    .chat-container{
+      min-width: 348px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .chat-container-header{
+      display: flex;
+      align-items: center;
+      height: 50px;
+      padding: 5px 0px 5px 10px;
+      background-color: #ededed;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .chat-user-info{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-transform: uppercase;
+    }
+
+    .chat-user-img{
+      width: 44px;
+      margin-right: 15px;
+      margin-left: 10px;
+    }
+
+    .chat-user-img > img{
+      width:100%;
+      border: 100%;
+    }
+
+    .chat-container-header-btn{
+      margin-left: 10px;
+    }
+
+    .chat-display-container{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      background-color: #ece5dd;
+    }
+
+    .chat-message{
+      display: flex;
+      margin: 15px 30px 15px 30px;
+      flex-direction: column;
+      position: relative;
+      width: fit-content;
+      max-width: 400px;
+      padding: 10px;
+      background-color: #dcf8c6;
+      border-radius: 10px;
+      height: fit-content;
+    }
+
+    .chat-message-text{
+      text-align: left;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .chat-message-date{
+      font-size: 11px;
+      color: gray;
+      font-weight: normal;
+      align-self: flex-end;
+    }

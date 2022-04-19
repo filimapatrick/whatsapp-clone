@@ -1,13 +1,13 @@
 import React from 'react'
 
-function UserProfile(name, image) {
+function UserProfile({name,photoURL}) {
   return (
     <div className='user-profile'>
         <div className='user-profile-image'>
-        <img src={image}/>
+        <img src={photoURL} alt=''/>
             </div>
       <div className='user-info'>
-<p className='user-name'> {name}</p>
+<p className='user-name'>{name}</p>
           </div>
     </div>
   )
