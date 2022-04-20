@@ -1,13 +1,13 @@
 import React from 'react'
 
-function ChatMessage() {
+function ChatMessage({message,time}) {
   return (
     <div className='chat-message'>
        <div className='chat-message-text'>
-           <p>Hii, How are you doing?</p>
+           <p>{message}</p>
        </div>
    <div className='chat-message-date'>
-       <p>14-12-2021</p>
+       <p>{time}</p>
    </div>
     </div>
   )
