@@ -49,7 +49,7 @@ const [openEmojiBox, setOpenEmojiBox] = useState(false);
 
       <div className='chat-input-btn'>
       <InsertEmoticonIcon onClick={() => setOpenEmojiBox(!openEmojiBox)} />
-<AttachFileIcon/>
+       <AttachFileIcon/>
 
       </div>
       {/* text Input Element */}
