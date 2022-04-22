@@ -7,7 +7,8 @@ import Login from './pages/Login';
 
 
 function App() {
-  const [user, setUser] = useState('');
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")));
+  console.log(user);
   return (
 
   
@@ -20,7 +21,7 @@ function App() {
       <Route path="/chatpage" element={<ChatPage />} />
    
 
-    </Routes>) : (<Login/>)
+    </Routes>) : (<Login setUser={setUser}/>)
    }
       
      
