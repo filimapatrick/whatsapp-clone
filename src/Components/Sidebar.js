@@ -6,12 +6,12 @@ import SearchIcon from '@mui/icons-material/Search';
 import UserProfile from './UserProfile';
 
 
-function Sidebar() {
+function Sidebar({currentUser, signOut}) {
   return (
     <div className='sidebar'>
         <div className='sidebar__header'>
-            <div className='sidebar_header_image'>
-           <img src='./user.png' alt='profile'/>
+            <div className='sidebar_header_image' onClick={signOut} >
+           <img src={currentUser.photoURL}/>
                 </div>
                 <div className='sidebar_header_btn'>
                     <TollIcon/>
@@ -36,12 +36,7 @@ function Sidebar() {
 <UserProfile name='Jerry' photoURL='./user.png'/>
 <UserProfile name='Jerry' photoURL='./user.png'/>
 <UserProfile name='Jerry' photoURL='./user.png'/>
-<UserProfile name='Jerry' photoURL='./user.png'/>
-<UserProfile name='Jerry' photoURL='./user.png'/>
-<UserProfile name='Jerry' photoURL='./user.png'/>
-<UserProfile name='Jerry' photoURL='./user.png'/>
-<UserProfile name='Jerry' photoURL='./user.png'/>
-<UserProfile name='Jerry' photoURL='./user.png'/>
+
 
 
 

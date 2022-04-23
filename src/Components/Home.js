@@ -1,11 +1,11 @@
 import React from 'react'
 import Sidebar from './Sidebar'
 
-function Home() {
+function Home({currentUser}) {
   return (
     <div className='home'>
         <div className='home__container'>
-  <Sidebar/>
+  <Sidebar currentUser={currentUser}/>
           
 
             <div className='home-bg'>
