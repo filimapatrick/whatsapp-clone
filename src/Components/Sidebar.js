@@ -11,7 +11,7 @@ function Sidebar({currentUser, signOut}) {
     <div className='sidebar'>
         <div className='sidebar__header'>
             <div className='sidebar_header_image' onClick={signOut} >
-           <img src={currentUser.photoURL}/>
+           <img src={currentUser?.photoURL}/>
                 </div>
                 <div className='sidebar_header_btn'>
                     <TollIcon/>
@@ -23,7 +23,7 @@ function Sidebar({currentUser, signOut}) {
 <div className='sidebar__search'>
     <div className='sidebar_search_input'>
     <SearchIcon/>
-    <input type='text' placeholder='Search or tart new chat'/>
+    <input type='text' placeholder='Search or start new chat'/>
     </div>
     </div>
 
